@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    position: fixed;
+    height: 20vh;
+    width: 99vw;
+    background-color: rgb(253, 81, 81);
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    top: 20vh;
+    left: 0;
+    position: fixed;
+    width: 25vw;
+    height: 80vh;
+    background-color: rgb(109, 218, 109);
+    text-align: center;
+    font-weight: 400;
+}
+.items{
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin-bottom: 40px;
+    height: 60px;
+    width: 150px;
+    background-color: aliceblue;
+}
+.title{
+    display: flex;
+    position: absolute;
+    background-color: aliceblue;
+    right: 0;
+    width: 75vw;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 20vh;
+}
+.miniArtic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bigArtic{
+    top: 50px;
+    margin: 50px;
+    height: 150px;
+    width: 500px;
+    background-color: yellow;
+    text-align: center;
+}
+.article{
+    flex: 1 1 auto;
+    margin: 0px 50px;
+    background-color: yellow;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+}
