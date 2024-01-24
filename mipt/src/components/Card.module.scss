@@ -1,0 +1,96 @@
+.card {
+    background-color: #c3d6fd;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+    margin: 5% auto;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;  
+    }
+    h3 {
+        color: rgb(95, 116, 160);
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.likesCounter {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #91b4fc;
+    color: #0f115f;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    justify-content: center;
+    margin: 0 20px 0 auto;
+    min-width: 30px;
+    padding: 0 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: all 0.3s ease;
+}
+
+.likesCounter:hover {
+    background-color: #91b4fc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heart {
+    display: flex;
+    flex-direction: row;
+}
+@mixin likeButton{
+    border: 0;
+    background-color: #c3d6fd;
+}
+.whiteLike::before {
+    @include likeButton;
+    content: "🤍";
+    font-size: 38px;
+}
+
+.like::before {
+    @include likeButton;
+    content: "❤️";
+    font-size: 38px;
+}
+
+.boxComment{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.titleComment{
+    margin: 0px;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(34, 57, 105);
+}
+
+.checkComments{
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #91b4fc;
+}
+
+button {
+    border: none;
+    border-radius: 255px;
+}
